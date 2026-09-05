@@ -1,0 +1,15 @@
+.admin-wallet-page { min-height: 100vh; padding: 30px 18px 60px; background: var(--bg-primary); color: var(--text-primary); }
+.admin-wallet-inner { width: min(1000px, 100%); margin: 0 auto; display: grid; gap: 16px; }
+.admin-wallet-top { display: flex; justify-content: space-between; gap: 16px; align-items: center; font-size: 12px; color: var(--text-secondary); }
+.admin-wallet-card { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 22px; box-shadow: var(--shadow-sm); }
+.admin-wallet-card h1, .admin-wallet-card h2 { margin: 0 0 6px; }
+.admin-wallet-card p { color: var(--text-secondary); font-size: 13px; }
+.admin-form { display: grid; gap: 12px; margin-top: 18px; }
+.admin-form label { display: grid; gap: 6px; font-size: 12px; font-weight: 700; color: var(--text-secondary); }
+.admin-form input { border: 1px solid var(--border-color); border-radius: 9px; padding: 11px 12px; background: var(--bg-primary); color: var(--text-primary); }
+.admin-form button { border: 0; border-radius: 9px; padding: 12px 14px; background: var(--primary); color: #fff; font-weight: 800; cursor: pointer; }
+.admin-message { margin-top: 12px; padding: 10px 12px; border-radius: 9px; background: var(--surface-1); font-size: 12px; }
+.admin-link { color: var(--primary); text-decoration: none; }
+.admin-table-wrap { overflow-x: auto; margin-top: 12px; }
+.admin-table-wrap table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.admin-table-wrap th, .admin-table-wrap td { text-align: left; padding: 10px; border-bottom: 1px solid var(--border-color); white-space: nowrap; }

@@ -1,0 +1,153 @@
+/* Refer & Earn page — new, additive styles only.
+   Uses existing design tokens (CSS variables) so it matches every palette
+   already defined in theme/palettes.js without duplicating any colors. */
+
+.refer-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.refer-stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.refer-stat-card {
+    flex: 1 1 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px;
+    background: var(--surface-1);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+}
+
+.refer-stat-label {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.refer-stat-value {
+    color: var(--text-primary);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.refer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    background: var(--surface-1);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+}
+
+.refer-card-title {
+    color: var(--text-primary);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.refer-link-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.refer-link-input {
+    flex: 1 1 260px;
+    min-width: 0;
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-default);
+    background: var(--surface-2);
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.refer-link-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+.refer-btn-primary {
+    background: var(--primary);
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.refer-btn-primary:hover {
+    filter: brightness(1.1);
+}
+
+.refer-btn-secondary {
+    background: var(--surface-2);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+    align-self: flex-start;
+}
+
+.refer-btn-secondary:hover {
+    background: var(--surface-3);
+}
+
+.refer-btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    align-self: flex-start;
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    background: var(--success);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: filter var(--transition-fast);
+}
+
+.refer-btn-whatsapp:hover {
+    filter: brightness(1.08);
+}
+
+.refer-qr-card {
+    align-items: flex-start;
+}
+
+.refer-qr-hint {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin: -8px 0 0;
+}
+
+.refer-qr-image {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    background: #ffffff;
+    padding: 8px;
+}
+
+.refer-disclaimer {
+    color: var(--text-muted);
+    font-size: 12px;
+    max-width: 640px;
+}
+
+@media (max-width: 640px) {
+    .refer-link-row {
+        flex-direction: column;
+    }
+
+    .refer-btn-primary {
+        width: 100%;
+    }
+}
